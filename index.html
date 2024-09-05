@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main id="main-container">
+        <h1 id="website-header">Typing Speed Test</h1>
+
+        <div class="input-wrapper">
+            <label for="">Write the words as fast as you can!</label>
+            <input type="text" id="userInput">
+
+            <div class="text-display">
+                <p>
+                    
+                </p>
+            </div>
+            
+            <p>
+                <i class="fa-sharp fa-solid fa-arrow-up"></i>
+                Begin writing to start the timer
+                <i class="fa-sharp fa-solid fa-arrow-up"></i>
+            </p>
+        </div>
+
+
+    </main>
+
+    <section id="timer-and-result-container">
+
+        <div class="timer-container">
+            <h2 id="timer-display-header">Timer:</h2>
+            <h2 id="timer-display">00:30:00</h2>
+            <button class="btn" id="btn-restart">Restart</button>
+        </div>
+
+        <div class="result-container">
+            <h2>Results</h2>
+            
+
+            <div class="result-wrapper totalClicks">
+                <p>Total Clicks: <span>13</span></p>
+            </div>
+
+            <div class="result-wrapper averageCps">
+                <p>Average CPS: <span>13</span></p>
+            </div>
+
+            <div class="result-wrapper totalWords">
+                <p>Total Words Written: <span>13</span></p>
+            </div>
+
+            <div class="result-wrapper averageWps">
+                <p>Average WPS: <span>13</span></p>
+            </div>
+
+            <div class="result-wrapper mistakes">
+                <p>Mistakes: <span>13</span></p>
+            </div>
+        </div>
+
+    </section>
+    <!-- JS -->
+     <script src="./index.js"></script>
+</body>
+</html>
