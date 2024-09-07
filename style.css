@@ -79,14 +79,9 @@ body,
     background: rgb(246, 240, 240);
 }
 
-.input-wrapper label {
-    display: block;
-}
-
 .input-wrapper p {
     text-decoration: underline 1px;
     text-underline-offset: 8px;
-
 }
 
 .input-wrapper #userInput {
@@ -98,7 +93,7 @@ body,
 
 /* Timer and result section */
 
-.text-display p{
+.text-display p {
     white-space: nowrap;
     overflow-x: auto;
 }
@@ -106,17 +101,18 @@ body,
 .text-display span {
     color: blue;
 }
+
+
 .text-display p::-webkit-scrollbar {
     opacity: 0;
 }
 
 .text-display span.correctInput {
     color: green;
-    text-decoration: underline green;
+
 }
 
 .text-display span.incorrectInput {
     color: red;
-    text-decoration: underline red;
 }
 
