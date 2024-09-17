@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 body {
     min-height: 100vh;
-    background: rgb(105, 111, 151);
+    background: #402E7A;
 }
 
 body,
@@ -17,20 +17,23 @@ body,
     flex-direction: column;
 }
 
+#main-container {
+    border: 1px solid black;
+    border-radius: 4%;
+    background: #1a90b4cb;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+
 #timer-and-result-container {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
 
-#timer-and-result-container,
-#main-container {
-    width: 36rem;
-}
 
 .timer-container,
 .result-container {
-
     align-self: center;
     text-align: center;
 
@@ -45,13 +48,18 @@ body,
 
 
 .timer-container #timer-display {
-    color: red;
+    color: rgb(224, 22, 52);
     font-size: 1.5rem;
     width: 8rem;
 }
 
+.timer-container #timer-display-header {
+    font-size: 1.6rem;
+}
 .result-container {
     background: rgba(151, 151, 235, 0.6);
+    width: 16rem;
+    max-height: 28rem;
 }
 
 .result-container h2 {
@@ -60,7 +68,7 @@ body,
 .result-container span {
     font-size: 1.1rem;
     font-weight: bold;
-    color: rgb(166, 31, 52);
+    color: rgb(186, 32, 55);
 }
  
 #website-header{
@@ -73,7 +81,7 @@ body,
     
     width: 32rem;
     height: 4rem;
-
+    scroll-behavior: smooth;
     outline: none;
 
     background: rgb(246, 240, 240);
@@ -92,14 +100,17 @@ body,
 
 
 /* Timer and result section */
-
+.timer-container {
+    background-color: none;
+}
 .text-display p {
     white-space: nowrap;
     overflow-x: auto;
 }
 
 .text-display span {
-    color: blue;
+    color: #140e55;
+    font-weight: bold;
 }
 
 
@@ -113,6 +124,31 @@ body,
 }
 
 .text-display span.incorrectInput {
-    color: red;
+    color: rgb(186, 32, 55);
 }
 
+.timer-container {
+    background: rgb(207, 204, 204);
+}
+#btn-restart {
+    padding: 0.8rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    background-color: white;
+
+    
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+
+#btn-restart:active {
+    background-color: rgba(255, 255, 255, 0.822);
+    border: 1px solid rgba(0, 0, 0, 0.812);
+}
+
+.result-container span {
+    display: inline-block
+}
